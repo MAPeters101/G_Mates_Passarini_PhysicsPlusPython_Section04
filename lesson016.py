@@ -8,3 +8,20 @@ elif n%2==0:
     print('The number is not greater than 3 but is even')
 else:
     print('The number does not satisfy any conditions')
+
+print()
+
+
+n = 8
+if n > 3:
+    if n%2==0:
+        print('The number is greater than 3 and even')
+    else:
+        print('The number is greater than 3 but is not even')
+else:
+    if n%2==0:
+        print('The number is not greater than 3 but is even')
+    else:
+        print('The number is not greater than 3 and is not even')
+
+
