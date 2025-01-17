@@ -14,5 +14,26 @@ print("\tEnter 2 to calculate Surface expansion.")
 print("\tEnter 3 to calculate Volumetric expansion.")
 choice = int(input("Enter selection: "))
 
+if choice == 1:
+    length = float(input("Enter the initial length: "))
+    lin_exp_coef = float(input("Enter the linear expansion coefficient: "))
+    delta_temp = float(input("Enter the change in temperature: "))
+    delta_linear = length * lin_exp_coef * delta_temp
+    print(f"The Linear expansion will be: {delta_linear}")
+elif choice == 2:
+    area = float(input("Enter the initial area: "))
+    area_exp_coef = float(input("Enter the area expansion coefficient: "))
+    delta_temp = float(input("Enter the change in temperature: "))
+    delta_area = area * area_exp_coef * delta_temp
+    print(f"The Surface expansion will be: {delta_area}")
+elif choice == 3:
+    volume = float(input("Enter the initial volume: "))
+    vol_exp_coef = float(input("Enter the volumetric expansion coefficient: "))
+    delta_temp = float(input("Enter the change in temperature: "))
+    delta_volume = volume * vol_exp_coef * delta_temp
+    print(f"The Volumetric expansion will be: {delta_volume}")
+else:
+    print("Invalid selection.")
+
 
 
